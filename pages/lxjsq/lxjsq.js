@@ -1,4 +1,3 @@
-// pages/aaa/aaa.js
 Page({
   data: {
     a:1000,

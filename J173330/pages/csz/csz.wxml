@@ -1,10 +1,5 @@
 <!--pages/csz/csz.wxml-->
-<wxs src="./../comm.wxs" module="some_comms"></wxs>
-<!-- 也可以直接使用单标签闭合的写法
-<wxs src="./../comm.wxs" module="some_comms" />
--->
-
-<!-- 调用 some_comms 模块里面的 bar 函数，且参数为 some_comms 模块里面的 foo -->
-<view> {{some_comms.bar(some_comms.foo)}} </view>
-<!-- 调用 some_comms 模块里面的 bar 函数，且参数为 page/index/index.js 里面的 msg -->
-<view> {{some_comms.bar(msg)}} </view>
+<view>请输入1-10之间的数据</view>
+<input  type="digit" value="{{da}}" bindinput='daInput' placeholder="在这里输入你猜的答案" />
+<view class="tr"><button   size="mini" bindtap='tjda'>提交</button></view>
+<text>提示：{{inputValue}}</text>

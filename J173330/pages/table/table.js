@@ -1,17 +1,22 @@
-Page({
+Component({
   data: {
-    listData: [
-      { "code": "01", "text": "text1", "type": "type1" },
-      { "code": "02", "text": "text2", "type": "type2" },
-      { "code": "03", "text": "text3", "type": "type3" },
-      { "code": "04", "text": "text4", "type": "type4" },
-      { "code": "05", "text": "text5", "type": "type5" },
-      { "code": "06", "text": "text6", "type": "type6" },
-      { "code": "07", "text": "text7", "type": "type7" }
-    ]
+    ItemList: [{
+      pagePath: "/pages/lyb/lyb",
+      text: "留言板"
+    }, {
+      pagePath: "/pages/map/map",
+      text: "地图"
+    }, {
+      pagePath: "/pages/lxjsq/lxjsq",
+      text: "利息计算器"
+    }, {
+      pagePath: "/pages/csz/csz",
+      text: "猜数字"
+    }
+    ],
   },
-  onLoad: function () {
-    console.log('onLoad')
+  attached() {
+  },
+  methods: {
   }
-
 })

@@ -103,6 +103,7 @@ Page({
       }
     ]
   },
+
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
@@ -122,4 +123,18 @@ Page({
     })
   }
 })
+wx.setTabBarStyle({
+  color: "#7A7E83",
+  selectedColor: "#3cc51f",
+  borderStyle: "black",
+  backgroundColor: "#ffffff",
+})
+wx.showTabBarRedDot({
+  index: 1,
+})
+wx.setTabBarBadge({
+  index: 2,
+  text: '1'
+})
+
 

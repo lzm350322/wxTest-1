@@ -26,8 +26,8 @@ style="width: 229px;" mode ="widthFix"></image>
 style="width: 217px;" mode ="widthFix"></image>
 </view> -->
 
-<view class="tr">
-<navigator url='../index/index'>
+<!-- <view class="tr">
+<navigator url='../stjdb'>
 <image src="../../images/oneoo1.jpg"
 style="width: 76px;" mode ="widthFix"></image></navigator>
 <navigator  url='../lists/lists'>
@@ -39,4 +39,4 @@ style="width: 98px;" mode ="widthFix"></image></navigator>
 <navigator  url='../Login/login'>
 <image src="../../images/oneoo4.jpg"
 style="width: 103px;" mode ="widthFix"></image></navigator>
-</view>
+</view> -->

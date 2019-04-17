@@ -9,10 +9,49 @@
     "pages/Tools/tools",
     "pages/lyb/lyb"
   ],
+
+
+
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#e0620d",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/caig.png",
+        "selectedIconPath": "images/caig1.png",
+        "text": "选购"
+      },
+      {
+        "pagePath": "pages/table/table",
+        "iconPath": "images/dind.png",
+        "selectedIconPath": "/images/dind1.png",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/lyb/lyb",
+        "iconPath": "images/gongg.png",
+        "selectedIconPath": "images/gongg1.png",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/grzl.png",
+        "selectedIconPath": "images/grzl1.png",
+        "text": "个人"
+      }
+    ]
+  },
+
+
+
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "数字旅者",
+    "navigationBarTitleText": "钟智民",
     "navigationBarTextStyle": "black"
   }
 }

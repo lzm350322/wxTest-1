@@ -1,28 +1,17 @@
-//获取应用实例
 const app = getApp()
+
 Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    usite:"",
-    uopenid:"sssss"
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-
-  onReady: function () {
-    this.setData({
-      usite: app.globalData.usite,
-      uopenid: app.globalData.openID,
-    });
-    this.Topmenu = this.selectComponent("#mytopmenu");
-    this.Topmenu.showpage();
-    this.linklist = this.selectComponent("#mylinklist");
-    this.linklist.showpage();
-    this.swipelist = this.selectComponent("#myswipelist");
-    this.swipelist.showpage();
-    
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
   },
-
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -30,6 +19,8 @@ Page({
         hasUserInfo: true
       })
     } else if (this.data.canIUse) {
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
         this.setData({
           userInfo: res.userInfo,
@@ -37,6 +28,7 @@ Page({
         })
       }
     } else {
+      // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
@@ -47,30 +39,13 @@ Page({
         }
       })
     }
-
-    /* wx.setTabBarStyle({
-      color: "#7A7E83",
-      selectedColor: "#3cc51f",
-      borderStyle: "black",
-      backgroundColor: "#ffffff",
-    }) */
-
-    wx.showTabBarRedDot({
-      index: 2,
-    })
-    wx.setTabBarBadge({
-      index: 3,
-      text: '5'
-    })
-
   },
-
   getUserInfo: function (e) {
+    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
   }
-  
 })

@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "TopMenu": "/components/Topmenu/Topmenu",
+    "Topmenu": "/components/Topmenu/Topmenu",
     "LinkList": "/components/Linklist/Linklist",
     "Swipelist": "/components/Swipelist/swipelist",
     "pmdggl": "/components/pmdggl/pmdggl"

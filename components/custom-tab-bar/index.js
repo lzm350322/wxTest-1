@@ -8,8 +8,10 @@ Component({
     },
   },
   data: {
-    color: "#7A7E83",
-    selectedColor: "#3cc51f",
+    color: "#000",
+    selectedColor: "#f00",
+    borderStyle: "black",
+    backgroundColor: "#fcc",
     list: [
       {
       pagePath: "/pages/index/index",
@@ -18,22 +20,28 @@ Component({
       text: "首页"
       }, 
       {
-        pagePath: "/pages/table/table",
-        iconPath: "/images/icon_list.jpg",
-        selectedIconPath: "/images/icon_list_2.jpg",
-        text: "列表"
+        pagePath: "/pages/myfavorite/myfavorite",
+        iconPath: "/images/icon_sc.png",
+        selectedIconPath: "/images/icon_sc_2.png",
+        text: "收藏"
       },  
       {
-      pagePath: "/pages/lyb/lyb",
-      iconPath: "/images/icon_al.png",
-      selectedIconPath: "/images/icon_al_2.png",
-      text: "案例"
+        pagePath: "/pages/shopingcart/shopingcart",
+      iconPath: "/images/icon_buy.png",
+      selectedIconPath: "/images/icon_buy_2.png",
+      text: "购物车"
       }, 
       {
-        pagePath: "/pages/logs/logs",
+        pagePath: "/pages/mymsg/mymsg",
+        iconPath: "/images/icon_msg.png",
+        selectedIconPath: "/images/icon_msg_2.png",
+        text: "消息"
+      },
+      {
+        pagePath: "/pages/myprofile/myprofile",
       iconPath: "/images/icon_user.png",
       selectedIconPath: "/images/icon_user_2.png",
-      text: "用户"
+      text: "我的"
     }
     ]
   }, 

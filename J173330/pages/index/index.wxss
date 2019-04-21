@@ -7,9 +7,10 @@
   align-items: center;
 }
 .td {
-  width:33.3%;
+  width:100%;
   justify-content: center;
   text-align: center;
   margin:0px;
+  display: flex;
 }
 

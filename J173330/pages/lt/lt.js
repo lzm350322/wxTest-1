@@ -1,3 +1,4 @@
+// pages/lt/lt.js
 Component({
   data: {
     ItemList: [{
@@ -9,10 +10,10 @@ Component({
     }, {
       pagePath: "/pages/lxjsq/lxjsq",
       text: "利息计算器"
-    }, {
-      pagePath: "/pages/csz/csz",
-      text: "猜数字"
-    }
+      }, {
+        pagePath: "/pages/csz/csz",
+        text: "猜数字"
+      }
     ],
   },
   attached() {

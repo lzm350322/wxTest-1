@@ -53,8 +53,11 @@
 <view hidden="{{currentTab!==2}}">
   tab_03
 </view>
-<br/>
+
+</view>
 <navigator url="/pages/lxjsq/lxjsq">
 <view>利息</view>
 </navigator>
-</view>
+
+
+

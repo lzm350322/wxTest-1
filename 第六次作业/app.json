@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/table/table",
+    "pages/lists/lists",
+    "pages/orders/orders",
+    "pages/Login/login",
+    "pages/Tools/tools",
+    "pages/lyb/lyb",
+    "pages/Wxmls/wxml",
+    "pages/calc/calc",
+    "pages/lxjsq/lxjsq",
+    "pages/pitems/pitems",
+    "pages/category/category",
+    "pages/guess/guess",
+    "pages/wxapi/wxapi"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/table/table",
+        "iconPath": "images/icon_list.png",
+        "selectedIconPath": "/images/icon_list.png",
+        "text": "位置"
+      },
+      {
+        "pagePath": "pages/lyb/lyb",
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component.png",
+        "text": "留言"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/icon_API.png",
+        "selectedIconPath": "images/icon_API.png",
+        "text": "日志"
+      }
+    ]
+  },
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "根硕说书",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

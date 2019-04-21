@@ -4,7 +4,7 @@
 style="width: 358px;" mode ="widthFix"></image>
 </view>
 
-<view class="tr">
+<!-- <view class="tr">
 <navigator url='../index/index'>
 <image src="../../images/01.jpg"
 style="width: 76px;" mode ="widthFix"></image></navigator>
@@ -17,4 +17,4 @@ style="width: 98px;" mode ="widthFix"></image></navigator>
 <navigator  url='../Login/login'>
 <image src="../../images/04.jpg"
 style="width: 103px;" mode ="widthFix"></image></navigator>
-</view>
+</view> -->

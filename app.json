@@ -10,6 +10,37 @@
     "pages/lists/lists",
     "pages/orders/orders"
   ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "images": "imges/1.png",
+        "iconPath": "images/11.png",
+        "pagePath": "pages/index/index",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "images/2.png",
+        "iconPath": "images/22.png",
+        "pagePath": "pages/index/index",
+        "text": "联系人"
+      },
+      {
+        "selectedIconPath": "images/3.png",
+        "iconPath": "images/33.png",
+        "pagePath": "pages/index/index",
+        "text": "朋友圈"
+      },
+      {
+        "selectedIconPath": "images/4.png",
+        "iconPath": "images/44.png",
+        "pagePath": "pages/index/index",
+        "text": "个人中心"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

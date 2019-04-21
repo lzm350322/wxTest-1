@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/lyb/lyb"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/1.jpg",
+        "selectedIconPath": "images/1.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/2.jpg",
+        "selectedIconPath": "images/2.jpg",
+        "text": "游戏"
+      },
+      {
+        "pagePath": "pages/lyb/lyb",
+        "iconPath": "images/3.jpg",
+        "selectedIconPath": "images/3.jpg",
+        "text": "实验功能"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/4.jpg",
+        "selectedIconPath": "images/4.jpg",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
+

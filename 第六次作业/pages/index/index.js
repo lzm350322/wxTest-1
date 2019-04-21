@@ -1,33 +1,24 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
-Page({
-  data: {
-    user: '',
-    result: '',
-    suijishu: Math.floor(Math.random() * 100),
+Component({
+  properties: {
+    selected: { // 属性名
+      type: Number,
+      value: 0,
+      observer(newVal, oldVal, changedPath) {
+      }
+    },
   },
-  usershuzi: function (e) {
-    this.setData({
-      user: e.detail.value
-    })
-  },
-  sub: function (e) {
-    var suijishu = this.data.suijishu;
-    var result = this.data.result;
-    var user = this.data.user;
-    console.log(suijishu);
-    console.log(user);
-    if (user > suijishu) {
-      result = '你输入的数字太大了噢';
-      console.log(result)
-    } else if (user < suijishu) {
-      result = '你输入的数字有点小噢';
-      console.log(result)
-    } 
-    this.setData({
-      result: result,
-    })
+ 
+ 
+  methods: {
+    switchTab(e) {
+      const data = e.currentTarget.dataset
+      const url = data.path
+      wx.switchTab({ url })
+      this.setData({
+        /* selected: data.index, */
+      })
+    }
   }
 })

@@ -24,7 +24,7 @@ style="width: 100px;" mode ="widthFix"></image>
 </view>
 <image src="../../images/aa_08.gif" 
 style="width: 100%;" mode ="widthFix"></image>
-<view class="tr">
+ <!-- <view class="tr">
 <navigator url='../index/index'>
 <image src="../../images/aa_09.gif"
 style="width: 76px;" mode ="widthFix"></image></navigator>
@@ -40,4 +40,4 @@ style="width: 76px;" mode ="widthFix"></image></navigator>
 <navigator  url='../Login/login'>
 <image src="../../images/aa_16.gif"
 style="width: 76px;" mode ="widthFix"></image></navigator>
-</view>
+</view>  -->

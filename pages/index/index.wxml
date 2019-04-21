@@ -22,17 +22,5 @@ style="width: 370px;" mode ="widthFix"></image>
 </view>
 </view>
 
-<view class="tr">
-<navigator url='../index/index'>
-<image src="../../images/1_06.png"
-style="width: 76px;" mode ="widthFix"></image></navigator>
-<navigator  url='../lists/lists'>
-<image src="../../images/1_07.png"
-style="width: 88px;" mode ="widthFix"></image></navigator>
-<navigator  url='../lyb/lyb'>
-<image src="../../images/1_08.png"
-style="width: 98px;" mode ="widthFix"></image></navigator>
-<navigator  url='../Login/login'>
-<image src="../../images/1_09.png"
-style="width: 103px;" mode ="widthFix"></image></navigator>
-</view>
+
+

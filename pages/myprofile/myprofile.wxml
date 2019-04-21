@@ -13,7 +13,7 @@
         </view><view class="td">
           <text></text>
         </view><view class="td">
-          <text>设置</text>
+          <navigator url="/pages/setting/setting">设置</navigator>
         </view>       
       </view>
     </block>
@@ -21,20 +21,20 @@
 
   <view class="tr">
     <view class="td">
-      <text>10</text>
+      <text>{{zjf}}</text>
     </view><view class="td">
-        <text>5</text>
+        <text>{{icount}}</text>
     </view><view class="td">
-        <text>8</text>
+        <text>{{zcj}}</text>
     </view>       
   </view>
   <view class="tr">
     <view class="td">
       <text>我的积分</text>
     </view><view class="td">
-        <text>消息</text>
+        <text>使用次数</text>
     </view><view class="td">
-        <text>收藏/历史</text>
+        <text>成绩</text>
     </view>       
   </view>
 

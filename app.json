@@ -10,11 +10,12 @@
     "tools/lxjsq/lxjsq",
     "tools/guess/guess",
     "tools/wxapi/wxapi",
-    "tools/table/table", 
+    "tools/table/table",
     "pages/myprofile/myprofile",
     "pages/mymsg/mymsg",
     "pages/shopingcart/shopingcart",
-    "pages/myfavorite/myfavorite"
+    "pages/myfavorite/myfavorite",
+    "pages/setting/setting"
   ],
   "tabBar": {
     "color": "#000",

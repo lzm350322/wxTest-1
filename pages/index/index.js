@@ -56,7 +56,7 @@ Page({
     }) */
 
     wx.showTabBarRedDot({
-      index: 2,
+      index: 1,
     })
     wx.setTabBarBadge({
       index: 3,

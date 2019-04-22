@@ -1,4 +1,4 @@
-// pages/shopingcart/shopingcart.js
+// pages/more/more.js
 Page({
 
   /**

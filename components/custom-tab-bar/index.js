@@ -26,10 +26,10 @@ Component({
         text: "收藏"
       },  
       {
-        pagePath: "/pages/shopingcart/shopingcart",
-      iconPath: "/images/icon_buy.png",
-      selectedIconPath: "/images/icon_buy_2.png",
-      text: "购物车"
+        pagePath: "/pages/more/more",
+        iconPath: "/images/icon_more.png",
+        selectedIconPath: "/images/icon_more_2.png",
+        text: "更多"
       }, 
       {
         pagePath: "/pages/mymsg/mymsg",

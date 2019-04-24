@@ -1,4 +1,11 @@
 /* pages/setting/setting.wxss */
+.table {
+  display: flex;
+  margin: 1px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 .tr {
   display: flex;
   margin: 0px;

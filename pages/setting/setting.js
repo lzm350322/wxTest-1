@@ -8,6 +8,7 @@ Page({
     gitno:"",
     bjname:"",
     xsno:"",
+    xsname:"",
     usite: "",
     uopenid: "sssss"
   },
@@ -26,10 +27,17 @@ Page({
       xsno: e.detail.value
     })
   },
+  xmInput: function (e) {
+    this.setData({
+      xsname: e.detail.value
+    })
+  },
   submit: function () {
     var gitno = this.data.gitno;
     var xsno = this.data.xsno;
     var bjname = this.data.bjname;
+    var xsname = this.data.xsname;
+
     if (gitno == '' || xsno == '') {
       wx.showToast({
         title: '必须输入git账号和学生号',
@@ -40,7 +48,7 @@ Page({
     wx.request({
       url: app.globalData.usite + '/cmsv1/apis/setting.ashx',
       method: 'GET',
-      data: { openId: app.globalData.openID, gitno: gitno, xsno: xsno, bjname: bjname },
+      data: { openId: app.globalData.openID, gitno: gitno, xsno: xsno, bjname: bjname, xsname: xsname },
       header: { 'Accept': 'application/json' },
       success: function (res) {
         if (res) {

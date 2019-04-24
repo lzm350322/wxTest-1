@@ -37,6 +37,7 @@ Page({
     var that = this;
     var toggleBtnVal = that.data.uhide;
     var itemId = event.currentTarget.id;
+    console.log(itemId);
     if (toggleBtnVal == itemId) {
       that.setData({
         uhide: 0

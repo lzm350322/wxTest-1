@@ -1,6 +1,6 @@
 <!--pages/setting/setting.wxml-->
-<view class="container">
 <text class="h1">设置</text>
+<view class="table">
 <form>
 <view class="tr">
   <view class="td1">
@@ -19,6 +19,14 @@
     <radio value="计算机1732">计算机1732</radio>
     <radio value="计算机1733">计算机1733</radio> 
   </radio-group>
+  </view>       
+</view>
+<view class="tr">
+  <view class="td1">
+    <text>学生姓名：</text>
+  </view>
+  <view class="td2">
+    <input class="valuex" value="{{xsname}}" bindinput='xmInput' placeholder="输入姓名" />
   </view>       
 </view>
 <view class="tr">

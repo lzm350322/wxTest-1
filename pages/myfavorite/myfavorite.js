@@ -5,16 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
+    furls: []
+  },
+  onLoad: function () {
+    var furls = wx.getStorageSync('furls') || []
+    furls.unshift('/pages/index/index')
+    wx.setStorageSync('furls', furls)
 
+    this.setData({
+      furls: wx.getStorageSync('furls'),
+    })
+    console.log(this.data.furls)
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  clearall:function(){
+ 
+    wx.showModal({
+      title: '提示',
+      content: '是否清除所有收藏',
+      success(res) {
+        if (res.confirm) {
+
+          wx.removeStorageSync('fuls');
+          wx.clearStorage();
+          this.setData({
+            furls: wx.getStorageSync('furls'),
+          })
+
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
 
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

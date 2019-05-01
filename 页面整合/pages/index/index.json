@@ -3,6 +3,7 @@
     "TopMenu": "/components/Topmenu/Topmenu",
     "LinkList": "/components/Linklist/Linklist",
     "Swipelist": "/components/Swipelist/swipelist",
-    "pmdggl": "/components/pmdggl/pmdggl"
+    "pmdggl": "/components/pmdggl/pmdggl",
+    "aaaa": "/components/aaaa/aaaa"
   }
 }

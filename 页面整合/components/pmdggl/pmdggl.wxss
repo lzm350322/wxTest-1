@@ -7,6 +7,7 @@
     justify-content: center;
     background:white;
     height:439rpx;
+    width: 323px;
 }
 .tab-right {
     width: 99%;

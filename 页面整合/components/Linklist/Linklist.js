@@ -1,8 +1,8 @@
 // Linklist/Linklist.js
 Component({
   data: {
-    ItemList: [ {
-      pagePath: "/pages/lxjsq/lxjsq",
+    ItemList: [ { 
+       pagePath: "/pages/lxjsq/lxjsq",
       text: "利息计算器"
       },{
         pagePath: "/pages/guess/guess",

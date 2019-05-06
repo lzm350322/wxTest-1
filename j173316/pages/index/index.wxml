@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<LinkList/>
 <view class="tr">
 
 </view>

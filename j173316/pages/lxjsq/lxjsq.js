@@ -1,96 +1,39 @@
-// pages/lxjsq/lxjsq.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    bj: 10000,
-   lx: 10,
-  sl: 1,
-    inputValue: 0
+    a:1000,
+    b:10,
+    c:1,
+    cs:[],
+    cs1:[]
   },
-  bjInput: function (e) {
+  benjin:function(e) {
     this.setData({
-      bj: e.detail.value
+      a: e.detail.value
     })
   },
-  lxInput: function (e) {
+  lixi: function(e) {
     this.setData({
-      lx: e.detail.value
+      b: e.detail.value
     })
   },
-  slInput: function (e) {
+  jie: function(e) {
     this.setData({
-      sl: e.detail.value
+      c: e.detail.value
     })
   },
-  jslx: function (e) {
-    var value = this.data.bj;
-    var lx = this.data.lx;
-    var sl = this.data.sl;
-
-    for (var i = 0; i < sl; i++) {
-      value = value * (1 + (lx / 100))
+  bindButtonTap: function(e) {
+    var benjin = this.data.a;
+    var lilv = this.data.b;
+    var jie = this.data.c;
+    var cs = new Array();
+    var cs1 = new Array();
+    var cs = this.data.cs;
+    for(var i = 0; i < jie ; i++){
+      benjin = benjin + benjin * (lilv/100)
+      cs1[i] = benjin
     }
-
     this.setData({
-      inputValue: value.toFixed(2)
+      cs : cs1
     })
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })
